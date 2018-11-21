@@ -56,8 +56,8 @@ get_header();
             <li><?php the_sub_field('interest'); ?></li>
           <?php endwhile; endif; ?>
         </ul>
-        <?php $image = get_field('contact_image'); $size = 'square_four'; ?>
-        <?php echo wp_get_attachment_image( $image, $size ); ?>
+        <?php $image = get_field('contact_image'); ?>
+        <img src="<?php echo $image['url']; ?>" width="150px" height="150px" alt="">
       </div>
       <div class="col-md-6">
         <?php echo do_shortcode('[contact-form-7 id="137" title="Main Contact Form"]'); ?>

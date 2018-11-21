@@ -66,6 +66,24 @@ section.contact {
   .wpcf7-list-item-label {
     margin-left: 5px;
   }
+
+  .intro {
+    color: $orange;
+    font-family: $font-family-headings;
+  }
+
+  ul {
+    font-family: $font-family-headings;
+  }
+
+  form {
+
+    label {
+      color: $blue;
+      font-family: $font-family-headings;
+      font-weight: $font-weight-bold;
+    }
+  }
 }
 
 section.grants {
