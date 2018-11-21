@@ -1,0 +1,130 @@
+@import 'variables';
+@import 'mixins';
+@import 'editor';
+
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/tables';
+// @import 'slick.js/slick/slick.scss';
+
+@import 'partials';
+@import 'header';
+@import 'footer';
+@import 'home';
+@import 'sponsorship';
+@import 'schedule';
+@import 'registration';
+@import 'about';
+
+html,
+body {
+
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-family-body;
+    color: $black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+iframe {
+    display: block;
+    margin-bottom: 1rem;
+}
+a {
+  text-decoration: none !important;
+  color: $orange;
+
+  &:hover {
+    color: darken($orange, 0.8);
+  }
+}
+.current-menu-item a {
+  color: $orange !important;
+}
+p.intro {
+  font-size: 20px;
+  line-height: 1.2;
+}
+//button styles
+.btn-primary {
+  color: $white !important;
+  background-color: $blue;
+  border-color: $blue;
+  font-size: 12px;
+  padding: 7px 25px;
+}
+
+.btn-primary-orange {
+  color: #fff;
+  border-color: $blue;
+  font-size: 12px;
+  padding: 7px 25px;
+  background-color: $orange;
+}
+// Custom Column Gutters
+.row.gutter-60 {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.gutter-60 > [class^="col-"],
+.gutter-60 > [class^=" col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.row.gutter-20 {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.gutter-20 > [class^="col-"],
+.gutter-20 > [class^=" col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.row.gutter-10 {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.gutter-10 > [class^="col-"],
+.gutter-10 > [class^=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.row.gutter-2 {
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+.gutter-2 > [class^="col-"],
+.gutter-2 > [class^=" col-"] {
+    padding-right: 1px;
+    padding-left: 1px;
+}

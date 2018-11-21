@@ -1,0 +1,39 @@
+@mixin sm {
+    @media (min-width: map-get($grid-breakpoints, 'sm')) { @content; }
+}
+
+@mixin md {
+    @media (min-width: map-get($grid-breakpoints, 'md')) { @content; }
+}
+
+@mixin lg {
+    @media (min-width: map-get($grid-breakpoints, 'lg')) { @content; }
+}
+
+@mixin xl {
+    @media (min-width: map-get($grid-breakpoints, 'xl')) { @content; }
+}
+
+@mixin fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin cover {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+@mixin contain {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+@mixin debug {
+    outline: 1px solid red;
+}

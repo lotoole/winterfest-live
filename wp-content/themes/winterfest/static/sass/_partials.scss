@@ -1,0 +1,179 @@
+section.hero-v1 {
+  position: relative;
+  padding: 40px 0;
+  text-align: center;
+  color: $white;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero-background {
+    @include fill;
+    @include cover;
+    z-index: 1;
+    transition: opacity 0.4s;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($black, 0.6);
+    z-index: 2;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: $white;
+  }
+
+  p {
+    max-width: 750px;
+    margin: 30px auto 30px auto;
+  }
+
+  .button-wrap {
+    text-align: center;
+
+    .btn {
+      margin: 0;
+    }
+  }
+}
+
+section.hero-v2 {
+  position: relative;
+  padding: 60px 0;
+  text-align: left;
+  color: $white;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .hero-background {
+    @include fill;
+    @include cover;
+    z-index: 1;
+    transition: opacity 0.4s;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize($black, 0.6);
+    z-index: 2;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: $white;
+  }
+}
+
+section.three_blocks {
+  padding: 40px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $black;
+    text-align: center;
+    margin: 0;
+  }
+
+  h5 {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  i {
+    display: block;
+    text-align: center;
+    font-size: 70px;
+    color: $black;
+  }
+}
+
+section.split-columns {
+
+  .content {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    color: $white;
+  }
+  .push-left {
+    order: 2;
+  }
+  .pull-left {
+    order: 1;
+  }
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: $white;
+    }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+    padding-top: 65%;
+  }
+  @include md {
+    .content {
+      padding: 100px;
+      text-align: left;
+    }
+    .push-left {
+      order: 1;
+    }
+    .pull-left {
+      order: 2;
+    }
+    .image {
+      padding-top: 0;
+    }
+    .faq-promo {
+      flex-direction: row;
+    }
+    .extra-help {
+      p {
+        max-width: 70%;
+      }
+      .numbers {
+        max-width: 70%;
+      }
+    }
+  }
+}
