@@ -18,25 +18,17 @@ get_header();
       <div class="col-md-6">
         <div class="grid">
           <div class="grid-sizer"></div>
+          <?php if( have_rows('mission_images') ): while( have_rows('mission_images') ) : the_row(); ?>
+            <?php $grid_image = get_sub_field('image'); ?>
           <div class="grid-item">
-            <img src="https://fillmurray.com/300/300" alt="">
+            <img src="<?php echo $grid_image['url']; ?>" width="300px" height="300px" alt="">
           </div>
-          <div class="grid-item grid-item--width2">
-            <img src="https://fillmurray.com/300/300" alt="">
-          </div>
-          <div class="grid-item">
-            <img src="https://fillmurray.com/300/300" alt="">
-          </div>
-          <div class="grid-item grid-item--width2">
-            <img src="https://fillmurray.com/300/300" alt="">
-          </div>
+          <?php endwhile; endif; ?>
         </div>
       </div>
       <div class="col-md-6">
         <div class="content">
           <?php the_field('mission_intro'); ?>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
         </div>
       </div>
     </div>
