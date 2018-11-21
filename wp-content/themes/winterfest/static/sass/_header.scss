@@ -29,6 +29,8 @@ header {
       li {
         display: inline-block;
         a {
+          font-family: $font-family-headings;
+          text-transform: uppercase;
           color: $black;
           font-size: 15px;
         }
