@@ -68,13 +68,14 @@ get_header();
         </div>
       </div>
       <?php if( have_rows('grant') ): $count=1; while( have_rows('grant') ) : the_row(); ?>
+        <?php $image = get_sub_field('image'); ?>
         <?php if($count === 1): ?>
           <div class="col-md-6 beg-grant">
-            <img src="https://fillmurray.com/300/100" alt="">
+            <img src="<?php echo $image['url']; ?>" width="300" height="100" alt="">
           </div>
         <?php else: ?>
           <div class="col-md-6 beg-grant">
-            <img src="https://fillmurray.com/300/100" alt="">
+            <img src="<?php echo $image['url']; ?>" width="300" height="100" alt="">
           </div>
         <?php endif; ?>
       <div class="col-md-6">
