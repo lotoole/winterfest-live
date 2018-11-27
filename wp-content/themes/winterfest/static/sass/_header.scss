@@ -1,17 +1,17 @@
 header {
-  .main-header {
-    font-size: 60px;
-    margin: 0;
-    text-transform: uppercase;
-    color: $green;
-  }
   position: relative;
   height: 100px;
+    .main-header {
+      font-size: 60px;
+      margin: 0;
+      text-transform: uppercase;
+      color: $green;
+    }
     .logo {
         display: inline-block;
         // width: 120px;
         position: absolute;
-        top: calc(50% - 47.5px);
+        top: calc(50% - 48.5px);
         left: 15px;
         z-index: 3;
 
@@ -33,6 +33,15 @@ header {
           text-transform: uppercase;
           color: $black;
           font-size: 15px;
+        }
+      }
+    }
+    @include lg {
+      .logo {
+        top: calc(50% - 59.5px);
+
+        img {
+          max-width: 200px;
         }
       }
     }
