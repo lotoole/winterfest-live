@@ -16,17 +16,6 @@ $hero_src = wp_get_attachment_image_src($hero_image, 'hero');
   }
 ?>
 
-<section class="home-video">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h5>Not sure what this event is about? Check out this video from last year!</h5>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qUfixOH2fwQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
 <?php get_footer(); ?>

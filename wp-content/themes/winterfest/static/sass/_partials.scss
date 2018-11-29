@@ -121,6 +121,10 @@ section.three_blocks {
 
 section.split-columns {
 
+  a {
+    color: $white !important;
+  }
+
   .content {
     position: relative;
     max-width: 600px;

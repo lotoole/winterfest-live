@@ -58,6 +58,11 @@ section.day {
     h3 {
       color: $white;
     }
+
+    span {
+      font-family: $font-family-headings;
+      font-size: 20px;
+    }
   }
 
   .event {

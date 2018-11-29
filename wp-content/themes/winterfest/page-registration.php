@@ -28,8 +28,8 @@ get_header();
               <span><?php the_sub_field('price'); ?></span>
               <span><?php the_sub_field('day_of_week'); ?></span>
               <span><?php the_sub_field('date'); ?></span>
-              <img src="<?php bloginfo('stylesheet_directory'); ?>/static/images/credit-cards.png" width="150" height="20px" alt="">
-              <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-primary">Register</a>
+              <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/static/images/credit-cards.png" width="150" height="20px" alt=""> -->
+                <!-- <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-primary">Register</a> -->
             </div>
           <?php else: ?>
             <div class="content">
@@ -37,7 +37,7 @@ get_header();
               <span><?php the_sub_field('price'); ?></span>
               <span><?php the_sub_field('day_of_week'); ?></span>
               <span><?php the_sub_field('date'); ?></span>
-              <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-primary">Register</a>
+                <!-- <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-primary">Register</a> -->
             </div>
           <?php endif; ?>
         </div>
@@ -55,7 +55,7 @@ get_header();
       </div>
       <div class="col-sm-4">
         <div class="btn-wrap">
-          <a href="#" class="btn btn-primary">Schedule</a>
+            <a href="http://winterfest-live.localhost/?page_id=159" class="btn btn-primary">Contact</a>
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@ get_header();
         <div class="content">
           <h4>Our Payment Processor</h4>
           <p class="intro">Laborum ipsum et amet irure culpa in veniam id officia commodo velit in. Do dolor velit veniam ipsum elit consequat proident magna. Excepteur eiusmod magna sint ipsum irure reprehenderit mollit.</p>
-          <a href="https://squareup.com/" target="_blank" class="btn btn-primary">More On Square</a>
+            <a href="https://squareup.com/" class="btn btn-primary">More On Square</a>
         </div>
       </div>
       <div class="col-md-6 order-1 order-md-2">

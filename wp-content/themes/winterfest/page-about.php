@@ -16,15 +16,27 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="grid">
-          <div class="grid-sizer"></div>
-          <?php if( have_rows('mission_images') ): while( have_rows('mission_images') ) : the_row(); ?>
-            <?php $grid_image = get_sub_field('image'); ?>
-          <div class="grid-item">
-            <img src="<?php echo $grid_image['url']; ?>" width="300px" height="300px" alt="">
+        <div class="image-wrap">
+          <div class="image-1">
+            <?php
+            $image_1 = get_field('image_1');
+            $image_2 = get_field('image_2');
+            ?>
+            <img src="<?php echo $image_1['url']; ?>" alt="">
           </div>
-          <?php endwhile; endif; ?>
+          <div class="image-2">
+            <img src="<?php echo $image_2['url']; ?>" alt="">
+          </div>
         </div>
+        <!-- <div class="grid">
+          <div class="grid-sizer"></div>
+          <?php //if( have_rows('mission_images') ): while( have_rows('mission_images') ) : the_row(); ?>
+            <?php //$grid_image = get_sub_field('image'); ?>
+          <div class="grid-item">
+            <img src="<?php //echo $grid_image['url']; ?>" width="300px" height="300px" alt="">
+          </div>
+          <?php //endwhile; endif; ?>
+        </div> -->
       </div>
       <div class="col-md-6">
         <div class="content">
@@ -43,11 +55,6 @@ get_header();
       </div>
       <div class="col-md-6">
         <p class="intro"><?php the_field('interest_promo'); ?></p>
-        <ul>
-          <?php if( have_rows('list') ): $count=1; while( have_rows('list') ) : the_row(); ?>
-            <li><?php the_sub_field('interest'); ?></li>
-          <?php endwhile; endif; ?>
-        </ul>
         <?php $image = get_field('contact_image'); ?>
         <img src="<?php echo $image['url']; ?>" width="150px" height="150px" alt="">
       </div>
@@ -70,25 +77,22 @@ get_header();
       <?php if( have_rows('grant') ): $count=1; while( have_rows('grant') ) : the_row(); ?>
         <?php $image = get_sub_field('image'); ?>
         <?php if($count === 1): ?>
-          <div class="col-md-6 beg-grant">
+          <div class="col-md-12 beg-grant">
             <img src="<?php echo $image['url']; ?>" width="300" height="100" alt="">
           </div>
         <?php else: ?>
-          <div class="col-md-6 beg-grant">
+          <div class="col-md-12 beg-grant">
             <img src="<?php echo $image['url']; ?>" width="300" height="100" alt="">
           </div>
         <?php endif; ?>
-      <div class="col-md-6">
-        <div class="name-wrap">
-          <h3><?php the_sub_field('company_name'); ?></h3>
-        </div>
+      <div class="col-md-12">
+        <h3><?php the_sub_field('company_name'); ?></h3>
       </div>
       <div class="col-md-12">
-        <h3 class="award">Awarded:<span>$<?php the_sub_field('award_amount'); ?></span></h3>
+        <h5 class="award">Awarded: <span>$<?php the_sub_field('award_amount'); ?></span></h5>
       </div>
       <div class="col-md-12 end-grant">
         <p><?php the_sub_field('company_intro'); ?></p>
-        <a href="<?php the_sub_field('company_linnk'); ?>" class="btn btn-primary">More</a>
       </div>
         <?php $count++; ?>
       <?php endwhile; endif; ?>
