@@ -19,6 +19,11 @@
             <img src="<?php bloginfo('stylesheet_directory'); ?>/static/images/logo-trans.png" alt="">
         </a>
 
+        <div class="social-links">
+          <a target="_blank" href="https://www.facebook.com/WaterburyWinterfest/"><i class="fab fa-facebook-square"></i></a>
+          <a target="_blank" href="https://www.instagram.com/waterbury.winterfest/"><i class="fab fa-instagram"></i></a>
+        </div>
+
           <nav class="primary">
               <div class="primary-nav-wrap">
                   <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>

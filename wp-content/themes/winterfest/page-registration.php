@@ -55,7 +55,7 @@ get_header();
       </div>
       <div class="col-sm-4">
         <div class="btn-wrap">
-            <a href="http://winterfest-live.localhost/?page_id=159" class="btn btn-primary">Contact</a>
+            <a href="mailto:waterbury.winterfest@gmail.com" class="btn btn-primary">Contact</a>
         </div>
       </div>
     </div>

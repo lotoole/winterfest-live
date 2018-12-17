@@ -36,13 +36,36 @@ header {
         }
       }
     }
+    .social-links {
+      position: absolute;
+      left: calc(50% - 48.1px);
+      top: calc(50% - 18.5px);
+      i {
+
+        &:first-child {
+          margin-right: 15px;
+        }
+        font-size: 35px;
+      }
+    }
     @include lg {
+      .social-links {
+        left: 80%;
+        top: 10%;
+      }
+
       .logo {
         top: calc(50% - 59.5px);
 
         img {
           max-width: 200px;
         }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .social-links {
+        display: none;
       }
     }
 }
