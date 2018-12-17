@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="content">
-          <span>©Waterbury Winter Fest.</span>
+          <span>©Waterbury Winterest</span>
           <span>All rights reserved</span>
         </div>
       </div>
