@@ -40,6 +40,7 @@ header {
       position: absolute;
       left: calc(50% - 48.1px);
       top: calc(50% - 18.5px);
+      z-index: 10;
       i {
 
         &:first-child {
