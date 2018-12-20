@@ -40,7 +40,7 @@ section.skip-to {
 }
 
 section.day {
-  padding: 40px 0;
+  padding: 20px 0;
 
   .day-title {
     background-position: 50% 50%;
@@ -54,6 +54,7 @@ section.day {
     flex-direction: column;
     color: $white;
     padding-left: 40px;
+    min-height: 300px;
 
     h3 {
       color: $white;
@@ -71,5 +72,11 @@ section.day {
     }
   }
 
-
+  @include md {
+    padding: 40px;
+    
+    .day-title {
+      min-height: 550px;
+    }
+  }
 }

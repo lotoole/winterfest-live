@@ -16,27 +16,14 @@ get_header();
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="image-wrap">
-          <div class="image-1">
-            <?php
-            $image_1 = get_field('image_1');
-            $image_2 = get_field('image_2');
-            ?>
-            <img src="<?php echo $image_1['url']; ?>" alt="">
-          </div>
-          <div class="image-2">
-            <img src="<?php echo $image_2['url']; ?>" alt="">
-          </div>
+        <div class="image-wrap" style="min-height: 400px;">
+          <?php
+          $image_1 = get_field('image_1');
+          $image_2 = get_field('image_2');
+          ?>
+          <div class="image-1" style="background-image: url(<?php echo $image_1['url']; ?>)"></div>
+          <div class="image-2" style="background-image: url(<?php echo $image_2['url']; ?>)"></div>
         </div>
-        <!-- <div class="grid">
-          <div class="grid-sizer"></div>
-          <?php //if( have_rows('mission_images') ): while( have_rows('mission_images') ) : the_row(); ?>
-            <?php //$grid_image = get_sub_field('image'); ?>
-          <div class="grid-item">
-            <img src="<?php //echo $grid_image['url']; ?>" width="300px" height="300px" alt="">
-          </div>
-          <?php //endwhile; endif; ?>
-        </div> -->
       </div>
       <div class="col-md-6">
         <div class="content">

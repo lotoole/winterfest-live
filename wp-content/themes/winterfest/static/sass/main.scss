@@ -22,12 +22,12 @@
 
 html,
 body {
-
     height: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     font-family: $font-family-body;
     color: $black;
+    max-width: 1500px;
 }
 
 html {
