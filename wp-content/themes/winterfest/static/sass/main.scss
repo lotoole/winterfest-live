@@ -84,6 +84,25 @@ p.intro {
   padding: 7px 25px;
   background-color: $orange;
 }
+//woocommerce
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  max-width: 48% !important;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+  max-width: 48% !important;
+}
+.form-row {
+  flex-direction: column;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+  width: 45% !important;
+}
+html body .page .d-flex .justify-content-start {
+  justify-content: center !important;
+}
+.justify-content-start {
+  justify-content: center !important;
+}
 // Custom Column Gutters
 .row.gutter-60 {
     margin-right: -30px;
