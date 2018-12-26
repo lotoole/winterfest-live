@@ -16,4 +16,24 @@ section.sponsors {
     display: block;
     margin: auto;
   }
+
+  .one-per img {
+    max-width: 400px;
+  }
+
+  .two-per img {
+    max-width: 300px;
+  }
+
+  .three-per img {
+    max-width: 225px;
+  }
+
+  .four-per img {
+    max-width: 150px;
+  }
+
+  .six-per img {
+    max-width: 100px;
+  }
 }

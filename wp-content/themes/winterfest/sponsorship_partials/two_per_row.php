@@ -6,7 +6,7 @@
   <?php $link = get_sub_field('sponsor_link');
         $link_url = $link['url'];
   ?>
-  <div class="col-md-6">
+  <div class="col-md-6 two-per">
     <a href="<?php echo esc_url($link_url); ?>">
       <img src="<?php echo $image['url']; ?>" width="500px" height="500px" alt="">
       <!-- <img src="<?php //bloginfo('stylesheet_directory'); ?>/static/images/benandjerrys.png" width="500px" height="500px" alt=""> -->

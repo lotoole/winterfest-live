@@ -6,7 +6,7 @@
   <?php $link = get_sub_field('sponsor_link');
         $link_url = $link['url'];
   ?>
-  <div class="col-md-3">
+  <div class="col-md-3 four-per">
     <a href="<?php echo esc_url($link_url); ?>">
       <img src="<?php echo $image['url']; ?>" width="300px" height="300px" alt="">
     </a>
