@@ -241,7 +241,7 @@ nav.mobile {
   width: 100%;
   height: 0;
   overflow: hidden;
-  z-index: 2;
+  z-index: 5;
   transition: height $snappy 0.4s, opacity 0.4s;
   background-color: $black;
   .mobile-track {
@@ -251,6 +251,14 @@ nav.mobile {
     background-color: $black;
     left: 0;
     transition: left $snappy 0.4s;
+
+    #menu-primary-1 {
+      display: block !important;
+    }
+
+    .menu {
+      display: none;
+    }
   }
   .mobile-track ul {
     position: absolute;
